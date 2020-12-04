@@ -26,7 +26,7 @@ public class TaskValidator {
         // タイトルの必須入力チェック
         private static String validateTitle(String title) {
             if(title == null || title.equals("")) {
-                return "タイトルを入力してください。";
+                return "タスク名を入力してください。";
             }
 
             return "";

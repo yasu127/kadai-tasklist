@@ -7,7 +7,7 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
-        <h2>タスク一覧</h2>
+        <h2>タスク名一覧</h2>
         <ul>
             <c:forEach var="task" items="${tasks}">
                 <li>
@@ -20,7 +20,7 @@
         </ul>
 
         <div id="pagination">
-            （全 ${messages_count} 件）<br />
+            （全 ${tasks_count} 件）<br />
             <c:forEach var="i" begin="1" end="${((tasks_count - 1) / 15) + 1}" step="1">
                 <c:choose>
                     <c:when test="${i == page}">
